@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./surveyform-styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> This is a survey form practiced by Shiro.</p>
+    <form id="survey-form">
+      <fieldset id="information">Please fill in your information:
+        <label id="name-label">Name <input id="name" name="name" type="text" placeholder="John Doe" required/>
+        </label>
+        <label id="email-label">Email <input id="email" name="email" type="email" placeholder="example@example.com" required/>
+        </label>
+        <label id="number-label">Age <input id="number" name="age" type="number" min="16" max="120" placeholder="16" />
+        </label>
+        <label id="gender-label">Gender 
+          <select id="dropdown">
+            <option value=""> </option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="question1">Which kind of device you played most games with?
+        <label id="device-label">
+          <input id="device-label" name="device-type" type="radio" class="inline" value="1"/> smart phone & tablet
+        </label>
+          <label id="device-label">
+          <input id="device-label" name="device-type" type="radio" class="inline" value="2"/> desktop & laptop
+        </label>
+        <label id="device-label">
+          <input id="device-label" name="device-type" type="radio" class="inline" value="3" /> gaming console (eg. Xbox, PS5, Switch)
+        </label>
+      </fieldset>
+      <fieldset id="question2">What kind of games are you playing? (multiple)
+        <label id="game-label">
+          <input id="game-label" value="1" type="checkbox" name="game-type" class="inline" /> Sandbox
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="2" type="checkbox" name="game-type" class="inline" /> Real-time strategy (RTS)
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="3" type="checkbox" name="game-type" class="inline"/> Shooters (FPS and TPS)
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="4" type="checkbox" name="game-type" class="inline"/> Multiplayer online battle arena (MOBA)
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="5" type="checkbox" name="game-type" class="inline"/> Role-playing (RPG, ARPG, and More)
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="6" type="checkbox" name="game-type" class="inline"/> Simulation and sports
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="7" type="checkbox" name="game-type" class="inline"/> Puzzlers and party games
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="8" type="checkbox" name="game-type" class="inline"/> Action-adventure
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="9" type="checkbox" name="game-type" class="inline"/> Survival and horror
+        </label>
+        <label id="game-label">
+          <input id="game-label" value="10" type="checkbox" name="game-type" class="inline"/> Other
+        <textarea id="game-label" name="game-type" rows="1" cols="30" placeholder="Please indicate the game category" ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
